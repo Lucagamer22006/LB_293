@@ -1,0 +1,30 @@
+/* =========================================================
+   BASE  |  Reset + Farbpalette „Northern Lights Beach“
+   ========================================================= */
+:root{
+    --navy-900:   #012340;  /* Midnight Sea */
+    --green-800:  #015F29;  /* Emerald Forest */
+    --green-700:  #027333;  /* Sacramento State Green */
+    --green-600:  #03A63C;  /* La Salle Green */
+    --green-500:  #04D939;  /* Aurora Neon */
+
+    --white:      #FFFFFF;
+    --beige-50:   #F5E6D0;  /* Backdrop */
+
+    /* Semantic Aliases */
+    --bg:         var(--beige-50);
+    --text:       var(--navy-900);
+}
+
+*,
+*::before,
+*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+
+body{
+    font-family:\"Poppins\",\"Segoe UI\",Roboto,sans-serif;
+    color:var(--text);
+    background:var(--bg);
+    min-height:100vh;
+    display:flex;flex-direction:column;
+}
